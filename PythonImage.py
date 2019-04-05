@@ -14,13 +14,14 @@ img.thumbnail(size)
 img.save('python_thumb_edit.jpg')
 #-----------------------------
 #이미지를 원하는 사이즈로 크롭 (부분 크롭)
-Crop = img.crop((50, 50, 100, 120))
+img2 = Image.open('python.png')
+Crop = img2.crop((50, 50, 100, 120))
 Crop.save('python_crop_edit.jpg')
 #-----------------------------
 #이미지를 리사이즈 (축소 or 확대)
-Resize = img.resize((100, 100))
+Resize = img2.resize((100, 100))
 Resize.save('python_resize_edit.jpg')
  #----------------------------
 # 이미지 회전 (125도)
-Rotate = img.rotate(125)
+Rotate = img2.rotate(125)
 Rotate.save('python_rotate_edit.jpg')
